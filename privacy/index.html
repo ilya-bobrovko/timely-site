@@ -8,14 +8,14 @@
 </head>
 <body>
 <main>
-  <nav><a href="../">Timely</a><a href="../support/">Support</a></nav>
+  <nav><a href="../">Timely</a><a href="../terms/">Terms</a><a href="../support/">Support</a></nav>
 
   <h1>Privacy Policy</h1>
-  <p class="lede">Last updated 6 October 2026</p>
+  <p class="lede">Last updated 7 October 2026</p>
 
   <p>Timely is a task and habit tracker for iPhone, made by Ilya Babrouka, an independent
-  developer. This page explains what the app stores, what leaves your device, and who can
-  read it. It is written in plain language on purpose.</p>
+  developer. This page explains what the app stores, what leaves your device, who can read it
+  and how long it is kept. It is written in plain language on purpose.</p>
 
   <h2>Your tasks stay on your device</h2>
   <p>Everything you create in Timely — tasks, habits, tags, completion history, reminder
@@ -29,7 +29,15 @@
   cannot. Apple's handling of it is covered by Apple's own privacy policy. Turning iCloud off
   for Timely in iOS Settings stops the sync.</p>
 
-  <h2>Analytics</h2>
+  <h2>One identifier, used by two services</h2>
+  <p>When you first open Timely, the app generates a random identifier for the installation
+  and keeps it in the app's own preferences on your device. It is not your Apple Account, not
+  a device serial number, and not an advertising identifier. It is removed when you delete the
+  app.</p>
+  <p>Both services below receive that same identifier, which means your usage statistics and
+  your purchase records are tied to each other by it.</p>
+
+  <h2>Usage statistics</h2>
   <p>Timely uses Mixpanel to count how the app is used, so we can tell which features matter
   and where people get stuck.</p>
   <p>What is sent is the name of a screen you opened and the fact that something happened: a
@@ -46,20 +54,33 @@
     <li>your name, email address, phone number or postal address;</li>
     <li>your location, your contacts, your photos, your calendars.</li>
   </ul>
-  <p>Each installation gets a random identifier generated on your device. It is not your
-  Apple Account, not a device serial number, and not an advertising identifier. Mixpanel's own
-  automatic event collection is turned off, and the mobile carrier, radio type and Wi-Fi
-  fields are excluded before anything is sent.</p>
+  <p>Mixpanel's own automatic event collection is turned off, and the mobile carrier, radio
+  type and Wi-Fi fields are excluded before anything is sent.</p>
 
   <h2>Purchases</h2>
   <p>Timely offers a paid plan. The payment itself is handled entirely by Apple — we never
   see your card details. We use RevenueCat to tell whether your purchase is active and to
   restore it on your other devices. RevenueCat receives the purchase receipt issued by Apple
-  and the same random identifier described above.</p>
+  and the identifier described above.</p>
+
+  <h2>Crash reports</h2>
+  <p>We read crash reports through Xcode Organizer, Apple's own tool. Those reports reach us
+  only if you allowed sharing them with app developers in iOS Settings, under Privacy &amp;
+  Security, Analytics &amp; Improvements. Apple strips them of anything identifying you before
+  we see them, and we add no crash reporting of our own.</p>
 
   <h2>Reminders</h2>
   <p>Reminders are scheduled by iOS on your own device. Nothing about them leaves your
   iPhone, and the app does not send push notifications from a server.</p>
+
+  <h2>How long it is kept</h2>
+  <ul>
+    <li><strong>Mixpanel events</strong> — two years. Mixpanel deletes events automatically
+    after two years, on an ongoing basis.</li>
+    <li><strong>RevenueCat's purchase record</strong> — until it is deleted.</li>
+    <li><strong>Everything on your device</strong>, including the identifier — until you
+    delete it or delete the app.</li>
+  </ul>
 
   <h2>No advertising, no selling</h2>
   <p>Timely shows no ads and contains no advertising networks. It does not track you across
@@ -69,26 +90,28 @@
   <p>Timely is not directed at children under 13, and we do not knowingly collect information
   from them.</p>
 
-  <h2>Deleting your data</h2>
-  <ul>
-    <li>Delete a task in the app and it is gone from the device, and from your iCloud copy on
-    the next sync.</li>
-    <li>Delete the app and the local database goes with it. To remove the iCloud copy as
-    well, open iOS Settings, tap your name, then iCloud, then Manage Account Storage.</li>
-    <li>Analytics records carry only the random identifier. Because we hold nothing that ties
-    that identifier to you, we usually cannot find your records from a name or an email
-    address. Write to us anyway and we will help as far as we can.</li>
-  </ul>
+  <h2>Your rights</h2>
+  <p>Delete a task in the app and it is gone from the device, and from your iCloud copy on
+  the next sync. Delete the app and the local database goes with it, and so does the
+  identifier — the app holds nothing that survives its own removal.</p>
+  <p>Two things are not removed by deleting the app, and we state this as a fact rather than
+  a promise about them: the statistics already sent to Mixpanel, which that service deletes on
+  its own two-year schedule, and RevenueCat's record of your purchase, which is kept until it
+  is deleted.</p>
+  <p>Write to us about any of this and we will answer. That is the whole of what we promise
+  here: a reply to a written request. We make no further commitment about locating or erasing
+  particular records.</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the date at the top of the page changes with it. The current
   version always lives at this address.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy: <a href="mailto:timely.app.help@gmail.com">timely.app.help@gmail.com</a></p>
+  <p>Questions about this policy:
+  <a href="mailto:timely.app.help@gmail.com">timely.app.help@gmail.com</a></p>
 
   <footer>
-    <p><a href="../">Timely</a> · <a href="../support/">Support</a></p>
+    <p><a href="../">Timely</a> · <a href="../terms/">Terms of Use</a> · <a href="../support/">Support</a></p>
   </footer>
 </main>
 </body>
